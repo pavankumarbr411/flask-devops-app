@@ -1,0 +1,25 @@
+body {
+    background-color: #f4fff5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.progress {
+    height: 25px;
+    background-color: #ebdd1f;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #5df118;
+    font-weight: bold;
+}

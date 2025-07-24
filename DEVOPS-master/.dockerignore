@@ -1,0 +1,32 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+ENV/
+
+# Ignore Git
+.git/
+.gitignore
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment and credentials
+.env
+
+# Ignore test reports or logs
+*.log
+*.sqlite3
+coverage/
+htmlcov/
+*.cover
+.pytest_cache/
+
+# Ignore Docker artifacts
+docker-compose.override.yml

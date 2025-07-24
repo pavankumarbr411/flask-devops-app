@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #f4fff5;
+    }
+
+    .auth-container {
+        max-width: 400px;
+        margin: 80px auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .auth-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+</style>
+
+<div class="auth-container">
+    <h2>Sign In</h2>
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+    <form method="POST" action="{{ url_for('login') }}">
+        <div class="mb-3">
+            <input type="text" name="username" class="form-control" placeholder="Username" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Login</button>
+    </form>
+    <p class="text-center mt-3">Don't have an account? 
+        <a href="{{ url_for('signup') }}">Sign Up</a>
+    </p>
+</div>
+{% endblock %}

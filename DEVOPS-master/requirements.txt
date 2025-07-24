@@ -1,0 +1,6 @@
+Flask
+flask-pymongo
+python-dotenv
+Werkzeug
+dnspython
+pytest 
